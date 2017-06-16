@@ -14,6 +14,9 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res){
   res.sendFile(path.join(__dirname, 'views/about.html'));
 });
+app.get('/fandino_assign', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/fandino_assign.html'));
+});
 app.get('*', function(req, res){
   res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
 });
